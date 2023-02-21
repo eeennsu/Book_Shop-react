@@ -1,0 +1,92 @@
+.upload_product_page {
+    width: 55%;
+    margin: 0 auto;
+ 
+    .form_wrapper {
+        padding: 2rem;
+        background: #BAD1C2;
+        border-radius: $border-raduis;
+
+        .zone_wrapper {
+            display: flex;
+            justify-content: center;
+
+            .drop_zone, .image_zone {
+                width: 400px;
+                height: 300px;
+                max-height: 325px;
+                border: 2px solid white;
+                border-radius: $border-raduis;
+            }
+
+            .drop_zone {          
+                background-color: #4FA095;        
+                position: relative;
+                
+                .image_count {
+                    position: absolute;
+                    top: 5%;
+                    color: wheat;
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+
+                .plus_icon {
+                    font-size: 45px;
+                    transition: 0.3s ease-in-out;
+                   
+                    &:hover {
+                        color: lightyellow;  
+                    }
+                }
+            }
+    
+            .image_zone {
+                display: flex;
+                border: 2px solid rgb(222, 253, 253);             
+
+                .image_wrapper {
+                    overflow-y: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    height: auto;              
+                
+                    .image_box {
+                        position: relative;                        
+                        height: auto;
+                        margin: 5px auto;                       
+                        
+                        img {                
+                            width: 100%;                    
+                            min-height: 215px;                                                 
+                            border-radius: $border-raduis;
+                        }
+
+                        button {
+                            z-index: 10;
+                            position: absolute;
+                            bottom: 18px; 
+                            right: 7px;                            
+                        }
+                    }                 
+                }              
+            }
+        }        
+
+        .form_footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;           
+        }
+    }
+}
+
+@include mediaSm {
+    .drop_zone {
+        background-color: black;
+        width: 50px;
+        height: 100px;
+    }
+}

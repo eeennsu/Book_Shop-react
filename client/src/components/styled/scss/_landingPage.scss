@@ -1,0 +1,85 @@
+.landing_page {
+    width: 60%;
+    margin: 25px auto 0 auto;
+    padding: 3px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .header {
+        margin: 1rem 0;
+
+        .title_box {
+            text-align: center;         
+
+            h1 {
+                color: #DFF6FF;
+            }
+        }
+    }
+
+    .menus {
+        width: 100%;
+        .menu_collapse{
+            background-color: #DFF6FF;
+        }
+
+        .menu_border {
+            background-color: #fff;
+            border-top: 2px dashed rgb(36, 34, 34);
+            margin: 2rem 0;
+            width: 85%;
+        }
+    }
+
+    .body {
+        width: 100%;
+        
+        .book_card {
+            position: relative;
+            width: 100%;
+            border-radius: 4px;                  
+            padding: 10px;
+            height: 330px;
+            background-color: #DFF6FF;        
+            border: 1px solid darkgrey;
+
+            &:hover {
+                img {
+                    transform: scale(1.17, 1.17);
+                }                    
+            } 
+
+            .card_carousel {
+                margin-top: 4px;
+
+                img {
+                    transition: 0.3s ease;
+                    width: 100%;
+                    height: 190px;                
+                }            
+            }      
+        }
+
+        .loaded {
+            padding: 18px 28px;
+            background-color: rgba($color: #DFF6FF, $alpha: 0.4);
+            border-radius: 16px;
+        }
+    }
+}
+
+@include mediaSm {
+    .landing_page {
+        width: 100%;
+        margin: 0;
+        padding: 0 15px;
+
+        .body {
+            .book_card {
+                width: 225px;
+            }
+        }
+    }
+}

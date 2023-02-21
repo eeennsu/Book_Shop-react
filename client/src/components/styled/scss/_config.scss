@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;  
+}
+
+
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+$border-raduis: 14px;
+
+
+@mixin mediaSm {
+    @media screen and (max-width: 767px){
+      @content;       //어떤 컨텐츠가 들어오는 구역 (함수의 내부)
+    }
+}
