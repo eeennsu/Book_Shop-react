@@ -71,7 +71,7 @@ const PriceRadio = ({ handleFilters, reloading }) => {
         <Collapse defaultActiveKey={['0']} className='menu_collapse'>
             <Panel header='Book Price' key='2'>
                 <Group onChange={handleRadio} value={selectedPrice}>
-                    <Row gutter={[16, 16]}>
+                    <Row gutter={[16, 16]} style={{ whiteSpace: 'nowrap' }}>
                         { renderRadioList }
                     </Row>  
                 </Group>                   

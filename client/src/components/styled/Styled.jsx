@@ -12,7 +12,6 @@ export const RootParent = styled.div`
     min-height: 88vh;
     height: auto;
     padding-top: 69px;
-    background-color: #06283D;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +34,6 @@ export const Base = styled.section`
 export const Wrapper = styled.div`
     margin-top: ${({ mt }) => mt && `${mt}rem`};
     h2, h3 {
-        color: #DFF6FF;
+        color: #030303;
     };   
 `;

@@ -37,11 +37,21 @@ const Book = memo(({ title, type, price, images, isLast, cb }) => {
             cover={<ImageSlider images={images} type={type}/>}  
             ref={targetRef}
             hoverable
-            > 
+        > 
             <Meta 
                 title={title} 
                 description={`${priceFormat(price)} Won`}
-                style={{ width: '100%', overflow: 'hidden', fontWeight: 'bolder' }}/>                 
+                style={{ 
+                    width: '100%', 
+                    overflow: 'hidden',
+                    fontWeight: 'bolder', 
+                    textOverflow: 'ellipsis',
+                    overflow: 'hidden',
+                    whiteSpace: 'nowrap',
+                    borderTop: '3px solid white',
+                    paddingTop: '5px'                 
+                }}
+            />                 
         </Card>                  
     );
 });

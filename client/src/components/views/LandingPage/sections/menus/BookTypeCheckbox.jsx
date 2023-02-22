@@ -24,7 +24,8 @@ const BookTypeCheckbox = ({ handleFilters, reloading }) => {
                 <Checkbox                   
                     onChange={() => handleCheck(name)} 
                     type='checkbox' 
-                    checked={checked.indexOf(name) !== -1}>
+                    checked={checked.indexOf(name) !== -1}
+                >
                     <span>{name}</span>
                 </Checkbox>
             </Col>           
@@ -33,7 +34,7 @@ const BookTypeCheckbox = ({ handleFilters, reloading }) => {
 
     return (      
         <Collapse defaultActiveKey={['0']} className='menu_collapse'>
-            <Panel header='Book Types' key='1'>
+            <Panel header='Book Types' key='1' >
                 <Row gutter={[16, 16]}>
                     { renderCheckboxList() }
                 </Row>                 

@@ -17,7 +17,8 @@ const SearchBooks = ({ updateSearchBooks }) => {
             style={{ width: '300px' }}
             value={searchkeyword}
             onChange={onChangeKeyword}
-            placeholder='Search By Typing...'/>
+            placeholder='Search By Typing...'
+        />
     );
 };
 

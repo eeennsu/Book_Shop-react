@@ -20,7 +20,7 @@
                 object-fit: cover;
                 overflow-y: auto;
                 margin-top: 30px;   
-                background-color: white;         
+                background-color: rgb(0, 0, 0);         
             }
         }
 
@@ -30,17 +30,17 @@
             
             .book_title {
                 font-size: 30px;
-                color: white;
+                color: rgb(0, 0, 0);
             }
 
             .book_infos {
                 border-radius: 8px;
-                background-color: #DFF6FF;
+                background-color: tan;
              
                 table {
                     font-family: Arial, Helvetica, sans-serif;
                     border-collapse: collapse;                
-                    width: 100%;
+                    width: 100%;        
                     
                     td, th {
                         text-align: left;                    
@@ -50,7 +50,7 @@
             }
 
             .book_description {
-                background-color: #fff;
+                background-color: antiquewhite;
                 padding: 14px;
                 border-radius: 8px;
                 height: 290px;

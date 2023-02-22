@@ -4,7 +4,7 @@
  
     .form_wrapper {
         padding: 2rem;
-        background: #BAD1C2;
+        background: lightgrey;
         border-radius: $border-raduis;
 
         .zone_wrapper {
@@ -18,9 +18,9 @@
                 border: 2px solid white;
                 border-radius: $border-raduis;
             }
-
+            
             .drop_zone {          
-                background-color: #4FA095;        
+                background-color: #ffffff;        
                 position: relative;
                 
                 .image_count {

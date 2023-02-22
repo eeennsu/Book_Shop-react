@@ -98,7 +98,7 @@ const LandingPage = () => {
 						loadingSkeleton :
 
 						books && books.map(({ _id, title, price, images, type }, i) => (					
-							<div className='col-6 col-md-4 col-xl-3 mb-5 ' key={_id} >
+							<div className='col-6 col-md-4 col-xl-3 mb-5' key={_id} >
 								<a href={`/book/${_id}`}>
 									<Book 										
 										title={title} 
@@ -107,7 +107,7 @@ const LandingPage = () => {
 										images={images} 
 										isLast={postSize >= limit && books.length -1 === i}
 										cb={LoadMoreBooks}
-										/>		
+									/>		
 								</a>																				
 							</div>							
 						))

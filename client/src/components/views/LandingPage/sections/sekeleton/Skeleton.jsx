@@ -32,7 +32,7 @@ const Content = styled.span`
     opacity: 0.1;
 `;
 
-const Skeleton = ({ style, animation=true, rounded, marginY, width, height, unit='px', color='#9bd3f8', text }) => {
+const Skeleton = ({ style, animation=true, rounded, marginY, width, height, unit='px', color='#fff', text }) => {
 
     return (
         <Base
@@ -43,7 +43,8 @@ const Skeleton = ({ style, animation=true, rounded, marginY, width, height, unit
             unit={unit}
             rounded={rounded}
             color={color}
-            marginY={marginY}>
+            marginY={marginY}
+        >
             <Content>
                 {text}
             </Content>
